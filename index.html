@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Untouchables Moving</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+  <div class="container header-inner">
+    <div class="logo">
+      <h1>UNTOUCHABLES</h1>
+      <span>Moving & Storage</span>
+    </div>
+
+    <nav>
+      <a href="#">Services</a>
+      <a href="#">Pricing</a>
+      <a href="#">Reviews</a>
+      <a href="#">Storage</a>
+      <a href="#">Care Initiative</a>
+    </nav>
+
+    <button class="btn-dark">Get Quote</button>
+  </div>
+</header>
+<section class="hero">
+  <div class="container hero-inner">
+    
+    <div class="hero-text">
+
+  <img src="assets/u_logo.png" alt="Untouchables Logo" class="hero-logo">
+
+  <h2>Miami’s Most Trusted Move</h2>
+  <p>Precision. Protection. Professionalism.</p>
+
+</div>
+
+    <form class="quote-box" action="https://formsubmit.co/karanovicgorankg@gmail.com" method="POST">
+  <h3>Quote Form</h3>
+
+  <!-- (opciono) subject emaila -->
+  <input type="hidden" name="_subject" value="New Quote Request — Untouchables">
+
+  <!-- (opciono) redirect posle slanja -->
+  <input type="hidden" name="_next" value="thank-you.html">
+
+  <!-- (opciono) isključi captcha -->
+  <input type="hidden" name="_captcha" value="false">
+
+  <input type="hidden" name="_template" value="table">
+
+  <select name="moveType" required>
+    <option value="" selected disabled>Move Type</option>
+    <option>Local Move</option>
+    <option>Long Distance</option>
+    <option>Packing & Unpacking</option>
+    <option>Storage</option>
+  </select>
+
+  <input type="text" name="fromAddress" placeholder="Moving From..." required>
+  <input type="text" name="toAddress" placeholder="Moving To..." required>
+
+  <input type="date" name="moveDate" required>
+
+  <input type="text" name="name" placeholder="Full Name" required>
+  <input type="tel" name="phone" placeholder="Phone Number" required>
+  <input type="email" name="email" placeholder="Email" required>
+
+  <button class="btn-dark full" type="submit">Get My Quote</button>
+</form>
+
+  </div>
+</section>
+
+<section class="services">
+  <div class="container">
+    <h2 class="section-title">Keep Moving Forward with Our Services</h2>
+
+<div class="service-grid">
+
+  <div class="card service-card">
+    <img src="assets/optimized_local_moves_icon.png" alt="Local Moves" class="service-icon">
+    <h3>Local Moves</h3>
+    <p>In Miami & Beyond</p>
+  </div>
+
+  <div class="card service-card">
+    <img src="assets/optimized_long_distance_icon.png" alt="Long Distance" class="service-icon">
+    <h3>Long Distance</h3>
+    <p>State to State</p>
+  </div>
+
+  <div class="card service-card">
+    <img src="assets/optimized_packing_unpacking_icon.png" alt="Packing & Unpacking" class="service-icon">
+    <h3>Packing &amp; Unpacking</h3>
+    <p>Full Protection</p>
+  </div>
+
+  <div class="card service-card">
+    <img src="assets/optimized_secure_storage_icon.png" alt="Secure Storage" class="service-icon">
+    <h3>Secure Storage</h3>
+    <p>Safe &amp; Secure</p>
+  </div>
+
+  <div class="card service-card">
+    <img src="assets/optimized_safe_transport_icon.png" alt="Safe Transport" class="service-icon">
+    <h3>Safe Transport</h3>
+    <p>Handled with Care</p>
+  </div>
+
+  <div class="card service-card">
+    <img src="assets/optimized_fine_art_pianos_icon.png" alt="Fine Art & Pianos" class="service-icon">
+    <h3>Fine Art &amp; Pianos</h3>
+    <p>Luxury Handling</p>
+  </div>
+
+</div>
+  </div>
+</section>
+
+<section class="flat-fee" id="flat-fee">
+  <div class="container flat-fee-grid">
+
+    <!-- TOP LEFT -->
+    <div class="flat-top-left">
+      <h2>No Surprises. Guaranteed Flat-Fee.</h2>
+
+      <ul class="checklist">
+        <li>All-Inclusive Pricing</li>
+        <li>No Hidden Charges</li>
+        <li>Labor, Gas & Supplies Included</li>
+      </ul>
+    </div>
+
+    <!-- TOP RIGHT -->
+    <div class="panel flat-top-right">
+      <h3>Included in Every Move:</h3>
+
+      <details class="acc-item" open>
+        <summary>Professional Wrapping</summary>
+        <div class="acc-body">Blankets, pads, and proper securing for every piece.</div>
+      </details>
+
+      <details class="acc-item">
+        <summary>Furniture Protection</summary>
+        <div class="acc-body">Corners, legs, and delicate surfaces protected end-to-end.</div>
+      </details>
+
+      <details class="acc-item">
+        <summary>Shrink Wrap &amp; Tape</summary>
+        <div class="acc-body">Clean wrapping to prevent scratches and shifting in transit.</div>
+      </details>
+
+      <details class="acc-item">
+        <summary>Certificate of Insurance</summary>
+        <div class="acc-body">Proof of coverage available upon request.</div>
+      </details>
+    </div>
+
+    <!-- BOTTOM LEFT -->
+    <div class="testimonial flat-bottom-left">
+      <div class="stars" aria-label="5 star rating">★★★★★</div>
+
+      <div class="testimonial-inner">
+        <div class="testimonial-img">
+          <!-- ovde stavi transparentnog čoveka -->
+          <img src="assets/man-in-black.png" alt="Customer" />
+        </div>
+
+        <div class="testimonial-text">
+          <p class="quote">
+            “The Untouchables moved us to NYC without a hitch! Best decision we made.”
+          </p>
+          <p class="author">— Jessica M., Miami to NYC</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- BOTTOM RIGHT -->
+    <div class="panel flat-bottom-right">
+      <h3>Untouchable Care Initiative</h3>
+
+      <details class="acc-item">
+        <summary>How does flat-rate pricing work?</summary>
+        <div class="acc-body">We quote based on move size, distance, access, and special items.</div>
+      </details>
+
+      <details class="acc-item">
+        <summary>How will you protect my items?</summary>
+        <div class="acc-body">Professional padding, wrapping, and secure loading methods.</div>
+      </details>
+
+      <details class="acc-item">
+        <summary>Are you licensed and insured?</summary>
+        <div class="acc-body">Yes — documentation is available with your quote.</div>
+      </details>
+
+      <details class="acc-item">
+        <summary>Do you handle long distance moves?</summary>
+        <div class="acc-body">Yes — state-to-state moves with careful scheduling and protection.</div>
+      </details>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-inner">
+
+    <div class="footer-brand">
+      <h2>UNTOUCHABLES</h2>
+      <p>Moving & Storage</p>
+      <div class="footer-divider"></div>
+      <p class="footer-note">Precision. Protection. Professionalism.</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Company</h4>
+      <a href="#">Services</a>
+      <a href="#flat-fee">Flat-Fee</a>
+      <a href="#">Storage</a>
+      <a href="#">Care Initiative</a>
+    </div>
+
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <a href="tel:3056156144" class="footer-phone">305-615-6144</a>
+      <p class="footer-small">Miami, FL</p>
+      <a href="#quote" class="btn-dark footer-btn">Get Quote</a>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container footer-bottom-inner">
+      <p>© <span id="year"></span> Untouchables Moving. All rights reserved.</p>
+      <p class="footer-mini">Licensed & Insured</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
