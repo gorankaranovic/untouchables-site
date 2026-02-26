@@ -26,7 +26,14 @@
       <a href="#">Care Initiative</a>
     </nav>
 
-    <button class="btn-dark">Get Quote</button>
+    <div class="header-cta">
+  <a href="tel:3056156144" class="header-phone">
+    <span class="phone-icon">📞</span>
+    305-615-6144
+  </a>
+
+  <a class="btn-dark" href="#quote">Get Quote</a>
+</div>
   </div>
 </header>
 <section class="hero">
@@ -61,8 +68,6 @@
     <option value="" selected disabled>Move Type</option>
     <option>Local Move</option>
     <option>Long Distance</option>
-    <option>Packing & Unpacking</option>
-    <option>Storage</option>
   </select>
 
   <input type="text" name="fromAddress" placeholder="Moving From..." required>
@@ -247,8 +252,18 @@
   </div>
 </footer>
 
-<script>
+
+  <script>
   document.getElementById("year").textContent = new Date().getFullYear();
+
+  // sticky header shadow on scroll
+  const header = document.querySelector(".header");
+  const onScroll = () => {
+    if (window.scrollY > 8) header.classList.add("is-sticky");
+    else header.classList.remove("is-sticky");
+  };
+  window.addEventListener("scroll", onScroll, { passive: true });
+  onScroll();
 </script>
 
 </body>

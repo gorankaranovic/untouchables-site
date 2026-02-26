@@ -20,6 +20,16 @@ body{
 .header{
   border-bottom:1px solid #ccc;
   background:white;
+
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  transition: box-shadow .25s ease, border-color .25s ease;
+}
+
+.header.is-sticky{
+  box-shadow: 0 10px 30px rgba(0,0,0,.08);
+  border-bottom-color: rgba(0,0,0,.10);
 }
 
 .header-inner{
@@ -855,4 +865,58 @@ footer{
     flex-direction: column;
     text-align: center;
   }
+}
+
+
+.header-cta{
+  display:flex;
+  align-items:center;
+  gap:18px;
+}
+
+.header-phone{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  font-family:Inter,sans-serif;
+  font-weight:700;
+  font-size:15px;
+  text-decoration:none;
+  color:#111; /* ista boja kao nav */
+  letter-spacing:.08em;
+  padding-left:18px;
+  border-left:1px solid #ddd; /* vizuelno odvajanje */
+  transition:.3s ease;
+}
+
+.header-phone:hover{
+  color:#ff0055; /* Miami accent */
+}
+
+.header-cta{
+  display:flex;
+  align-items:center;
+  gap:20px;
+}
+
+
+.header-phone{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  font-family:Inter,sans-serif;
+  font-weight:600;
+  font-size:16px;
+  text-decoration:none;
+  color:#1c1c1c;
+  letter-spacing:.05em;
+  transition:.3s ease;
+}
+
+.header-phone:hover{
+   color:#ff0055;
+}
+
+.phone-icon{
+  font-size:15px;
 }
